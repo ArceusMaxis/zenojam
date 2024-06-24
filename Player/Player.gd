@@ -1,11 +1,11 @@
 extends CharacterBody2D
 
 @export_category("Movement Settings")
-@export var move_speed := 400.0
+@export var move_speed := 150.0
 @export var move_acceleration := 10.0
 
 @export_category("Jump Settings")
-@export var jump_height := 100.0
+@export var jump_height := 50.0
 @export var base_gravity := 980.0
 @export var enable_coyote_time := true
 @export var enable_long_input := true
@@ -23,16 +23,11 @@ var fall_gravity : float
 
 var can_jump := false
 var pressed_jump := false
-var mode := false
+var mode := true
 var horizontal := 0.0
 var last_animation : String
 
 func _ready():
-	#var baby = baby_scene.instantiate()
-	#baby.freeze = true
-	#baby.position = baby_holder.position
-	#add_child(baby)
-	
 	calculate_jump_parameters()
 
 func calculate_jump_parameters():

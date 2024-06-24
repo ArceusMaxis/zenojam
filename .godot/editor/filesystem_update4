@@ -3,3 +3,5 @@ res://Test World/Textures/Tilemap/TileSet.tres
 res://Test World/World.tscn
 res://Player/Baby.tscn
 res://Player/Player.gd
+res://Player/screen.gdshader
+res://Player/crt.gdshader
