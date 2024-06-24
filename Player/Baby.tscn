@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnpx054i3w7lm"]
+
+[ext_resource type="Texture2D" uid="uid://blyuwsufvvwcj" path="res://Player/Resources/Player.png" id="1_tsiwp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_556gu"]
+radius = 7.68929
+height = 33.442
+
+[node name="Baby" type="RigidBody2D" groups=["baby"]]
+rotation = -0.349066
+collision_layer = 2
+collision_mask = 2
+
+[node name="Player - Base" type="Sprite2D" parent="."]
+modulate = Color(7.31587e-06, 0.979128, 0.724352, 1)
+position = Vector2(0.5, 11)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_tsiwp")
+offset = Vector2(0, -16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5.96046e-08, -1.19209e-07)
+scale = Vector2(0.7, 0.7)
+shape = SubResource("CapsuleShape2D_556gu")
