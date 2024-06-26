@@ -1,9 +1,9 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://de2m5qfbacay6"]
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://oe8h606syuay"]
 
-[ext_resource type="Texture2D" uid="uid://5dr544wgtygv" path="res://Test World/Textures/Tilemap/tileset_Tilemap.png" id="1_6l4sg"]
+[ext_resource type="Texture2D" uid="uid://bg1v4x7qrfm0v" path="res://Test World/Textures/Tilemap/tileset_blobtemp_Tilemap.png" id="1_x71oe"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cbwm8"]
-texture = ExtResource("1_6l4sg")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tkiwe"]
+texture = ExtResource("1_x71oe")
 0:0/0 = 0
 0:0/0/terrain_set = 0
 0:0/0/terrain = 0
@@ -380,17 +380,6 @@ texture = ExtResource("1_6l4sg")
 8:4/0/terrains_peering_bit/bottom_side = 0
 8:4/0/terrains_peering_bit/left_side = 0
 8:4/0/terrains_peering_bit/top_side = 0
-10:4/0 = 0
-10:4/0/terrain_set = 0
-10:4/0/terrain = 0
-10:4/0/terrains_peering_bit/right_side = 0
-10:4/0/terrains_peering_bit/bottom_right_corner = 0
-10:4/0/terrains_peering_bit/bottom_side = 0
-10:4/0/terrains_peering_bit/bottom_left_corner = 0
-10:4/0/terrains_peering_bit/left_side = 0
-10:4/0/terrains_peering_bit/top_left_corner = 0
-10:4/0/terrains_peering_bit/top_side = 0
-10:4/0/terrains_peering_bit/top_right_corner = 0
 
 [resource]
 physics_layer_0/collision_layer = 3
@@ -398,4 +387,4 @@ physics_layer_0/collision_mask = 3
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "Terrain 0"
 terrain_set_0/terrain_0/color = Color(0, 0, 0, 1)
-sources/0 = SubResource("TileSetAtlasSource_cbwm8")
+sources/0 = SubResource("TileSetAtlasSource_tkiwe")

@@ -26,6 +26,7 @@ var pressed_jump := false
 var mode := true
 var horizontal := 0.0
 var last_animation : String
+var is_climbing = false
 
 func _ready():
 	calculate_jump_parameters()
@@ -38,6 +39,7 @@ func calculate_jump_parameters():
 func _physics_process(delta):
 	apply_gravity(delta)
 	handle_jump()
+	climb()
 	handle_movement(delta)
 	update_animation()
 	move_and_slide()
@@ -139,3 +141,8 @@ func girl_mode():
 	jump_height = 100
 	jump_time_to_peak = 0.25
 	jump_time_to_descent = 0.2
+
+func climb():
+	if is_climbing == true:
+		if Input.is_action_pressed("climbup"):
+			velocity.y = -move_speed
